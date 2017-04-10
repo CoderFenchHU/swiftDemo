@@ -19,6 +19,9 @@
 		E3F10B631E9B351600D61EDB /* HFTitleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3F10B5E1E9B351600D61EDB /* HFTitleView.swift */; };
 		E3F10B651E9B352200D61EDB /* HFWaterFallLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3F10B641E9B352200D61EDB /* HFWaterFallLayout.swift */; };
 		E3F10B671E9B352800D61EDB /* UIColor-Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3F10B661E9B352800D61EDB /* UIColor-Extension.swift */; };
+		E3F10B6C1E9B801D00D61EDB /* LoadNibProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3F10B691E9B801D00D61EDB /* LoadNibProtocol.swift */; };
+		E3F10B6D1E9B801D00D61EDB /* NetworkProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3F10B6A1E9B801D00D61EDB /* NetworkProtocol.swift */; };
+		E3F10B6E1E9B801D00D61EDB /* ReusableProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3F10B6B1E9B801D00D61EDB /* ReusableProtocol.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +39,9 @@
 		E3F10B5E1E9B351600D61EDB /* HFTitleView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HFTitleView.swift; sourceTree = "<group>"; };
 		E3F10B641E9B352200D61EDB /* HFWaterFallLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HFWaterFallLayout.swift; sourceTree = "<group>"; };
 		E3F10B661E9B352800D61EDB /* UIColor-Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor-Extension.swift"; sourceTree = "<group>"; };
+		E3F10B691E9B801D00D61EDB /* LoadNibProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoadNibProtocol.swift; sourceTree = "<group>"; };
+		E3F10B6A1E9B801D00D61EDB /* NetworkProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkProtocol.swift; sourceTree = "<group>"; };
+		E3F10B6B1E9B801D00D61EDB /* ReusableProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReusableProtocol.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,6 +88,7 @@
 		E3F10B591E9B351600D61EDB /* HFPageView */ = {
 			isa = PBXGroup;
 			children = (
+				E3F10B681E9B801D00D61EDB /* Protocol */,
 				E3F10B661E9B352800D61EDB /* UIColor-Extension.swift */,
 				E3F10B641E9B352200D61EDB /* HFWaterFallLayout.swift */,
 				E3F10B5A1E9B351600D61EDB /* HFContentView.swift */,
@@ -91,6 +98,16 @@
 				E3F10B5E1E9B351600D61EDB /* HFTitleView.swift */,
 			);
 			path = HFPageView;
+			sourceTree = "<group>";
+		};
+		E3F10B681E9B801D00D61EDB /* Protocol */ = {
+			isa = PBXGroup;
+			children = (
+				E3F10B691E9B801D00D61EDB /* LoadNibProtocol.swift */,
+				E3F10B6A1E9B801D00D61EDB /* NetworkProtocol.swift */,
+				E3F10B6B1E9B801D00D61EDB /* ReusableProtocol.swift */,
+			);
+			path = Protocol;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -167,12 +184,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				E3F10B651E9B352200D61EDB /* HFWaterFallLayout.swift in Sources */,
+				E3F10B6C1E9B801D00D61EDB /* LoadNibProtocol.swift in Sources */,
+				E3F10B6E1E9B801D00D61EDB /* ReusableProtocol.swift in Sources */,
 				E3F10B601E9B351600D61EDB /* HFPageCollectionLayout.swift in Sources */,
 				E3F10B4A1E9B34FC00D61EDB /* ViewController.swift in Sources */,
 				E3F10B481E9B34FC00D61EDB /* AppDelegate.swift in Sources */,
 				E3F10B671E9B352800D61EDB /* UIColor-Extension.swift in Sources */,
 				E3F10B631E9B351600D61EDB /* HFTitleView.swift in Sources */,
 				E3F10B621E9B351600D61EDB /* HFPageView.swift in Sources */,
+				E3F10B6D1E9B801D00D61EDB /* NetworkProtocol.swift in Sources */,
 				E3F10B5F1E9B351600D61EDB /* HFContentView.swift in Sources */,
 				E3F10B611E9B351600D61EDB /* HFPageCollectionView.swift in Sources */,
 			);
@@ -336,6 +356,7 @@
 				E3F10B581E9B34FC00D61EDB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

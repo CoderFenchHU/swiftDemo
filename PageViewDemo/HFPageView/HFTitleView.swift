@@ -68,7 +68,6 @@ class HFTitleView: UIView {
 // MARK:- Title View 拓展
 extension HFTitleView {
     fileprivate func setupUI() {
-        addSubview(scrollView)
         
         setupTitleLabels()
         
@@ -79,6 +78,8 @@ extension HFTitleView {
         if style.isShowCoverView {
             setupCoverView()
         }
+        
+        addSubview(scrollView)
     }
     
     private func setupBottomLine(){
@@ -99,10 +100,10 @@ extension HFTitleView {
             titleLabel.textColor = (i == 0 ? style.selectColor : style.normalColor)
             titleLabel.font = style.titleFont
             titleLabel.isUserInteractionEnabled = true
-            scrollView.addSubview(titleLabel)
             
             let tapGes = UITapGestureRecognizer(target: self, action: #selector(titleLabelClick(_ :)))
             titleLabel.addGestureRecognizer(tapGes)
+            scrollView.addSubview(titleLabel)
             titleLabels.append(titleLabel)
         }
         
